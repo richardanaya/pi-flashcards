@@ -1,0 +1,36 @@
+{
+  "flashcards": [
+    {
+      "question": "What does CSS stand for?",
+      "answer": "Cascading Style Sheets"
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "answer": "O(log n)"
+    },
+    {
+      "question": "What command lists files in a directory?",
+      "answer": "ls"
+    },
+    {
+      "question": "What is the capital of Japan?",
+      "answer": "Tokyo"
+    },
+    {
+      "question": "How many bits are in a byte?",
+      "answer": "8"
+    },
+    {
+      "question": "What does DNS stand for?",
+      "answer": "Domain Name System"
+    },
+    {
+      "question": "What keyword declares a constant in JS?",
+      "answer": "const"
+    },
+    {
+      "question": "What is the default port for HTTPS?",
+      "answer": "443"
+    }
+  ]
+}

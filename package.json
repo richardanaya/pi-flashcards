@@ -1,0 +1,49 @@
+{
+  "name": "pi-flashcards",
+  "version": "0.0.1",
+  "description": "A pi extension that shows flashcard quiz questions while the AI is thinking, then reveals the answer when done",
+  "license": "MIT",
+  "author": "Richard Anaya",
+  "type": "module",
+  "main": "index.ts",
+  "types": "index.ts",
+  "files": [
+    "index.ts",
+    "README.md",
+    "flashcards.example.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardanaya/pi-flashcards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/richardanaya/pi-flashcards/issues"
+  },
+  "homepage": "https://github.com/richardanaya/pi-flashcards#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "echo 'Ready to publish'"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "pi-extension",
+    "pi",
+    "cli",
+    "tui",
+    "thinking",
+    "flashcards",
+    "quiz",
+    "learning",
+    "terminal",
+    "ai"
+  ]
+}
