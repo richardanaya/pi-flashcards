@@ -112,6 +112,26 @@ Any JSON file with a `flashcards` array works. Here's a deck for learning Rust:
 }
 ```
 
+## Quick Start — Build Your Own Deck
+
+Paste this prompt into pi to instantly generate a custom deck on any topic:
+
+```
+/create-flashcards-for: <topic>
+```
+
+Examples:
+- `/create-flashcards-for: AWS services`
+- `/create-flashcards-for: Python standard library`
+- `/create-flashcards-for: React hooks`
+- `/create-flashcards-for: N2 Japanese vocabulary`
+
+Or use this one-liner to generate a deck and write it directly to config:
+
+```
+Write 20 flashcards to ~/.pi/flashcards.json on the topic of <your topic>. Each card needs a "question" and "answer" field. Use the flashcards.example.json format.
+```
+
 ## License
 
 MIT
