@@ -110,7 +110,7 @@ function getNextFlashcard(): Flashcard {
 }
 
 /**
- * Load user config from ~/.flashcards.json
+ * Load user config from ~/.pi/flashcards.json
  */
 async function loadConfig(): Promise<void> {
   try {
@@ -134,7 +134,7 @@ async function loadConfig(): Promise<void> {
 // ── Extension ───────────────────────────────────────────────────────────────
 
 export default async function (pi: ExtensionAPI) {
-  configPath = join(homedir(), ".flashcards.json");
+  configPath = join(homedir(), ".pi", "flashcards.json");
   await loadConfig();
 
   // Set a neutral collapsed-label on session start

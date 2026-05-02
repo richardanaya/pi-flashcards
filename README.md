@@ -43,7 +43,7 @@ Then reload pi to load the extension:
 
 ## Configuration
 
-Create a `~/.flashcards.json` file to customize your flashcard deck:
+Create a `~/.pi/flashcards.json` file to customize your flashcard deck:
 
 ```json
 {
