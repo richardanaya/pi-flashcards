@@ -5,15 +5,15 @@ A pi extension that turns your "thinking" wait time into a micro-learning sessio
 ## How It Looks
 
 ```
-Q: What is the time complexity of binary search?   ← working message while thinking
-──────────────────────────────────────────────────
+Working... [Q: What is the time complexity of binary search?]     ← while thinking
+───────────────────────────────────────────────────────────────────
 ...thinking content...
-──────────────────────────────────────────────────
-A: O(log n)                                         ← revealed when thinking completes
+───────────────────────────────────────────────────────────────────
+Thinking... [Q: What is the time complexity of binary search?  →  A: O(log n)]  ← when done
 ```
 
-**While thinking:** The working message shows a random question from your deck.
-**After thinking:** The answer is revealed — both in a notification and as the collapsed thinking label (visible with `Ctrl+T`).
+**While thinking:** The working message shows `Working... [Q: {question}]`.
+**After thinking:** Both the question and answer are revealed — `Thinking... [Q: {question}  →  A: {answer}]` — shown as a notification and as the collapsed thinking label (visible with `Ctrl+T`).
 
 ## Installation
 
@@ -72,7 +72,7 @@ Create a `~/.pi/flashcards.json` file to customize your flashcard deck:
 
 ## Built-in Flashcards
 
-The extension ships with ~45 flashcards covering:
+The extension ships with ~75 flashcards covering:
 
 | Category | Examples |
 |----------|----------|
@@ -88,13 +88,13 @@ The extension ships with ~45 flashcards covering:
 
 The extension hooks into pi's lifecycle events:
 
-1. **`session_start`** — Sets a neutral collapsed-thinking label
-2. **`turn_start`** — Picks a random flashcard, sets the working message to `Q: {question}`
-3. **`turn_end`** — Reveals the answer via `A: {answer}` notification and updates the collapsed thinking label
+1. **`session_start`** — Sets a neutral collapsed-thinking label (`"Flashcard..."`)
+2. **`turn_start`** — Picks a random flashcard, sets the working message to `Working... [Q: {question}]`
+3. **`turn_end`** — Reveals both question and answer: `Thinking... [Q: {question}  →  A: {answer}]`
 
-The answer is visible in two ways:
-- **Immediately:** A notification pops up showing `A: {answer}`
-- **On collapse:** Press `Ctrl+T` to collapse the thinking block and see the answer as the label
+The question and answer are visible in two ways:
+- **Immediately:** A notification pops up showing `Thinking... [Q: {question}  →  A: {answer}]`
+- **On collapse:** Press `Ctrl+T` to collapse the thinking block and see the same message as its label
 
 ## Creating Your Own Decks
 
