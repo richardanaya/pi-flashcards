@@ -196,10 +196,10 @@ export default async function (pi: ExtensionAPI) {
     const answer = activeFlashcard.answer;
     const question = activeFlashcard.question;
 
-    // After thinking, the collapsed block (Ctrl+T) shows the answer
-    ctx.ui.setHiddenThinkingLabel(`A: ${answer}`);
+    // After thinking, the collapsed block (Ctrl+T) shows Q + A
+    ctx.ui.setHiddenThinkingLabel(`Q: ${question}  →  A: ${answer}`);
 
-    // Also log to the chat so the user sees the answer immediately
-    ctx.ui.notify(`A: ${answer}`, "info");
+    // Also log to the chat so the user sees both immediately
+    ctx.ui.notify(`Q: ${question}  →  A: ${answer}`, "info");
   });
 }
