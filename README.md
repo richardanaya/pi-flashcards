@@ -82,6 +82,7 @@ The extension ships with ~45 flashcards covering:
 | Linux / Terminal | ls, cd, pwd, grep, cat |
 | JavaScript / TypeScript | const, let, typeof null, JSON.parse, === |
 | General Knowledge | Capitals, planets, speed of light, moon landing, elements, continents |
+| Beginner Japanese | Greetings, manners, food/drink, numbers 1-3, common nouns, question words |
 
 ## How It Works
 
