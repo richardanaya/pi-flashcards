@@ -183,7 +183,7 @@ export default async function (pi: ExtensionAPI) {
     const question = activeFlashcard.question;
 
     // Working message displayed while the loader spins
-    ctx.ui.setWorkingMessage(`Q: ${question}`);
+    ctx.ui.setWorkingMessage(`Working... [Q: ${question}]`);
 
     // Keep the collapsed label neutral until the answer is revealed
     ctx.ui.setHiddenThinkingLabel("Flashcard...");
